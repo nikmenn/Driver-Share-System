@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Passenger</title>
+</head>
+<body>
+  <a href = "home.jsp">Home</a>
+<form action="passenger.jsp">
+        <div> 
+         Select where you are leaving from <br />
+            <select name="departure" id="departure">
+            
+             <option value="Busch">Busch</option>
+             <option value="Livingston">Livingston</option>
+             <option value="CollegeAvenue">College Avenue</option>
+             <option value="CookDouglas">Cook/Douglass</option>
+            </select> <br/>
+        </div>
+        <div>
+        Select where you are driving to<br />
+            <select name="destination" id="destination">
+             <option value="Busch">Busch</option>
+             <option value="Livingston">Livingston</option>
+             <option value="CollegeAvenue">College Avenue</option>
+             <option value="CookDouglas">Cook/Douglass</option>
+            </select> <br/>
+        </div>
+        <div>
+            <span>What time will you be leaving? Format: HH:mm (24 Hour)</span> 
+            <input type="time" name="deptime"/> <br/>
+        </div>
+        <div>
+            <span>What date will you be leaving? Format: yyyy-mm-dd</span> 
+            <input type="date" name="date"/> <br/>
+        </div>
+        
+        <input type="submit" value="Submit"/>
+    </form>
+<form method ="post">
+<input type="checkbox" name="recurring" value="M">Recurring Monthly<br/>
+<input type="checkbox" name="recurring" value="W">Recurring Weekly<br/>
+<input type="checkbox" name="recurring" value="D">Recurring Daily<br/>
+</form>  
+    
+  </body>
+</body>
+</html>
